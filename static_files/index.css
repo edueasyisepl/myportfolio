@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.landing-section {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+}
+
+.navigation .logo a img {
+    width: 60px;
+    height: 60px;
+}
+
+.navigation .links nav ul {
+    display: flex;
+    padding-top: 20px;
+}
+
+.navigation .links nav ul li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.navigation .links nav ul li a {
+    font-family: 'Baloo Bhai 2', sans-serif;
+    color: white;
+}
+
+.navigation .links nav ul li a:hover {
+    color: purple;
+    transition: color .25s;
+}
+
+.navigation .hire-me a button {
+    margin-top: 8px;
+    padding: 7px 26px;
+    height: 49px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-weight: 590;
+    cursor: pointer;
+}
+
+.navigation .hire-me a button:hover {
+    background-color: purple;
+    color: white;
+    transition: background .3s ease;
+}
+
+.hamburger-menu-icon {
+    display: none;
+    padding-top: 15px;
+}
+
+.navigation .hamburger-menu-icon i {
+    cursor: pointer;
+    font-size: 1.6em;
+    color: white;
+}
+
+.menu-check {
+    display: none;
+}
+
+.landing-section .landing-section-text {
+    padding-top: 22%;
+    padding-left: 5%;
+}
+
+.landing-section .landing-section-text h1 {
+    font-size: 2.2em;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.landing-section .landing-section-text h1 span {
+    color: crimson;
+}
+
+.landing-section .landing-section-text h1:nth-child(2) {
+    font-size: 1.5em;
+}
+
+.landing-section .landing-section-text #hire {
+    color: rgb(21, 21, 100);
+    font-weight: 600;
+    font-family: 'Lora', sans-serif;
+    font-size: 1em;
+    margin-right: 8px;
+    text-decoration: underline;
+}
+
+.landing-section .landing-section-text #hire:hover {
+    color: white;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.landing-section .landing-section-text a button {
+    background: purple;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    margin-top: 6px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.landing-section .landing-section-text a button:hover {
+    background-color: orange;
+    transition: background .6s ease;
+    color: whitesmoke;
+}
+
+:root {
+    --kanit: 'Kanit';
+    --dark: #1c1c1c;
+    --light: #c4c4c4;
+    --teal: #008080;
+    --orangered: #ff4500;
+}
+
+.typed-text {
+    color: var(--teal);
+    font-family: var(--redressed);
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    margin-left: 4px;
+    background: cyan;
+}
+
+.cursor.blink {
+    animation: blink 0.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        background: teal;
+    }
+
+    40%,
+    50% {
+        background: transparent;
+    }
+}
+
+@keyframes curblink {
+
+    0%,
+    100% {
+        background: var(--orangered);
+        width: 4px;
+    }
+
+    40%,
+    50% {
+        background: transparent;
+    }
+}
+
+.socialplatforms {
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    margin-top: 11%;
+}
+
+.socialplatforms h1 {
+    margin-right: 3px;
+    margin-top: 2px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.socialplatforms a i {
+    color: white;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 1.5em;
+}
+
+.services {
+    background-color: #380b62;
+}
+
+.services .heading {
+    padding-top: 19px;
+}
+
+.services .heading h1 {
+    color: teal;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.services .service-cards .card h2 {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(72, 172, 211);
+}
+
+.my-work {
+    background-color: rgb(21, 21, 88);
+}
+
+.my-work .heading h1 {
+	color: cyan;
+}
+
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 700px;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-color: #2A265F;
+	color: #fff;
+	max-width: 250px;
+}
+
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-info h4 {
+	color: rgb(21, 21, 100);
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.about-me {
+    background-color: #234E70;
+}
+
+.about-me .img {
+    width: 40%;
+}
+
+.about-me .details {
+    width: 55%;
+}
+
+.about-me .details h3 {
+    font-family: 'Lora', sans-serif;
+    color: whitesmoke;
+}
+
+.contact-me {
+    background-color: #05386B;
+}
+
+.contact-me h1 {
+    color: orange;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contact-me .container input {
+    background: transparent;
+    border: 2px solid cyan;
+    color: white;
+    margin-right: 5px;
+}
+
+.contact-me .container textarea {
+    background: transparent;
+    border: 2px solid cyan;
+    color: white;
+    margin-right: 5px;
+}
+
+.footer-distributed{
+	background: skyblue;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+
+/* Responsive design starts from here */
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+    #cross {
+        display: none;
+    }
+    
+    .navigation {
+        position: fixed;
+        z-index: 1;
+        background-color: #d87884;
+        justify-content: space-between;
+    }
+
+    .navigation .logo {
+        margin-left: 10px;
+    }
+
+    .navigation .hamburger-menu-icon {
+        margin-right: 10px;
+    }
+
+    .navigation .links nav ul {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .navigation .links {
+        display: none;
+    }
+    
+    .hamburger-menu-icon {
+        display: block;
+    }
+
+    .navigation .hire-me {
+        display: none;
+    }
+
+    #ham:checked~ .navigation .hamburger-menu-icon label .fa-bars {
+        display: none;
+    }
+
+    #ham:checked~ .navigation {
+        height: 280px;
+        /* padding-bottom: 23px; */
+        transition: height .5s ease;
+    }
+
+    #ham:checked~ .navigation .hamburger-menu-icon label #cross {
+        display: block;
+    }
+
+    #ham:checked~ .navigation .links {
+        display: block;
+    }
+
+    #ham:checked~ .navigation .links nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+    .landing-section .landing-section-text {
+        padding-top: 15rem;
+    }
+
+}
+
+@media (max-height: 880px) {
+    .landing-section .landing-section-text {
+        padding-top: 15rem;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-me .img, .details{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .about-me .details {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .landing-section {
+        height: 650px;
+    }
+}
+
+
+@media only screen and (max-height: 600px) {
+    .landing-section {
+        height: 650px;
+    }
+}
